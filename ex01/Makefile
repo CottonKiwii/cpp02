@@ -6,7 +6,7 @@
 #    By: jwolfram <jwolfram@student.42vienna.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 15:40:11 by jwolfram          #+#    #+#              #
-#    Updated: 2025/08/01 02:49:28 by jwolfram         ###   ########.fr        #
+#    Updated: 2025/08/11 21:29:34 by jwolfram         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = first_class
 
 CXX = c++
 
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD -MP
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -fr
 
@@ -24,14 +24,11 @@ SRCS = main.cpp \
 	   Fixed.cpp
 
 OBJS = ${SRCS:%.cpp=%.o}
-DEPS = ${SRCS:%.cpp=%.d}
 
 all: ${NAME}
 
 ${NAME}: ${OBJS}
 		bear --append -- ${CXX} ${CXXFLAGS} ${OBJS} -o ${NAME}
-
--include ${DEPS}
 
 clean:
 		${RM} ${OBJS}
