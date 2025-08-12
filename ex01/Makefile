@@ -6,11 +6,11 @@
 #    By: jwolfram <jwolfram@student.42vienna.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 15:40:11 by jwolfram          #+#    #+#              #
-#    Updated: 2025/08/11 21:29:34 by jwolfram         ###   ########.fr        #
+#    Updated: 2025/08/12 21:59:05 by jwolfram         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = first_class
+NAME = fixed_point_number_class
 
 CXX = c++
 

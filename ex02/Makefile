@@ -6,11 +6,11 @@
 #    By: jwolfram <jwolfram@student.42vienna.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 15:40:11 by jwolfram          #+#    #+#              #
-#    Updated: 2025/08/11 21:30:15 by jwolfram         ###   ########.fr        #
+#    Updated: 2025/08/12 21:59:29 by jwolfram         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = first_class
+NAME = now_we_are_talking
 
 CXX = c++
 
