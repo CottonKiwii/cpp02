@@ -6,12 +6,18 @@
 /*   By: jwolfram <jwolfram@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 20:52:46 by jwolfram          #+#    #+#             */
-/*   Updated: 2025/08/11 20:54:22 by jwolfram         ###   ########.fr       */
+/*   Updated: 2025/08/12 03:22:02 by jwolfram         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 #include <iostream>
+
+std::ostream	&operator<<(std::ostream &other, const Fixed &fixed)
+{
+	return (other << fixed.toFloat());
+}
+
 
 int main()
 {
