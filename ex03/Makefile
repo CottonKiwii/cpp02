@@ -6,11 +6,11 @@
 #    By: jwolfram <jwolfram@student.42vienna.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 15:40:11 by jwolfram          #+#    #+#              #
-#    Updated: 2025/08/01 02:49:09 by jwolfram         ###   ########.fr        #
+#    Updated: 2025/08/14 00:21:34 by jwolfram         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = moar_brainz
+NAME = bsp
 
 CXX = c++
 
