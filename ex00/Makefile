@@ -6,7 +6,7 @@
 #    By: jwolfram <jwolfram@student.42vienna.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 15:40:11 by jwolfram          #+#    #+#              #
-#    Updated: 2025/08/11 20:49:00 by jwolfram         ###   ########.fr        #
+#    Updated: 2025/08/25 15:30:04 by jwolfram         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ DEPS = ${SRCS:%.cpp=%.d}
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-		bear --append -- ${CXX} ${CXXFLAGS} ${OBJS} -o ${NAME}
+		${CXX} ${CXXFLAGS} ${OBJS} -o ${NAME}
 
 -include ${DEPS}
 

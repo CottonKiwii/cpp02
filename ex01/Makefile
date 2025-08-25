@@ -6,7 +6,7 @@
 #    By: jwolfram <jwolfram@student.42vienna.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 15:40:11 by jwolfram          #+#    #+#              #
-#    Updated: 2025/08/12 21:59:05 by jwolfram         ###   ########.fr        #
+#    Updated: 2025/08/25 15:30:31 by jwolfram         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ OBJS = ${SRCS:%.cpp=%.o}
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-		bear --append -- ${CXX} ${CXXFLAGS} ${OBJS} -o ${NAME}
+		${CXX} ${CXXFLAGS} ${OBJS} -o ${NAME}
 
 clean:
 		${RM} ${OBJS}
