@@ -20,17 +20,17 @@ int	main()
 	Point b(1, 0);
 	Point c(0, 1);
 
-	std::cout << "*==========*   Point On Point   *==========*" << std::endl;
+	std::cout << "*============* Point On Point *============*" << std::endl;
 	std::cout << "A: " << bsp(a, b, c, Point(0, 0)) << std::endl;
 	std::cout << "B: " << bsp(a, b, c, Point(1, 0)) << std::endl;
 	std::cout << "C: " << bsp(a, b, c, Point(0, 1)) << "\n" << std::endl;
 
-	std::cout << "*==========*   Point On Line    *==========*" << std::endl;
+	std::cout << "*============* Point On Line *=============*" << std::endl;
 	std::cout << "AB: " << bsp(a, b, c, Point(0.5f, 0)) << std::endl;
 	std::cout << "AC: " << bsp(a, b, c, Point(0, 0.5f)) << std::endl;
 	std::cout << "BC: " << bsp(a, b, c, Point(0.5f, 0.5f)) << "\n" << std::endl;
 
-	std::cout << "*==========*   Point In Area    *==========*" << std::endl;
+	std::cout << "*============* Point In Area *=============*" << std::endl;
 	std::cout << "(0.25/0.25): " << bsp(a, b, c, Point(0.25f, 0.25f)) << std::endl;
 	std::cout << "(0.4/0.4): " << bsp(a, b, c, Point(0.4f, 0.4f)) << std::endl;
 	std::cout << "(0.1/0.1): " << bsp(a, b, c, Point(0.1f, 0.1f)) << "\n" << std::endl;
