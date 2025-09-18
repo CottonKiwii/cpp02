@@ -81,7 +81,7 @@ bool Fixed::operator>=(const Fixed &other) const
 	return (this->_fixedPointValue >= other._fixedPointValue);	
 }
 
-Fixed Fixed::operator+(const Fixed &other)
+Fixed Fixed::operator+(const Fixed &other) const
 {
 	Fixed	res;
 
@@ -89,7 +89,7 @@ Fixed Fixed::operator+(const Fixed &other)
 	return (res);
 }
 
-Fixed Fixed::operator-(const Fixed &other)
+Fixed Fixed::operator-(const Fixed &other) const
 {
 	Fixed	res;
 
@@ -97,14 +97,14 @@ Fixed Fixed::operator-(const Fixed &other)
 	return (res);
 }
 
-Fixed Fixed::operator*(const Fixed &other)
+Fixed Fixed::operator*(const Fixed &other) const
 {
 	Fixed	res(this->toFloat() * other.toFloat());
 
 	return (res);
 }
 
-Fixed Fixed::operator/(const Fixed &other)
+Fixed Fixed::operator/(const Fixed &other) const
 {
 	Fixed	res(this->toFloat() / other.toFloat());
 
